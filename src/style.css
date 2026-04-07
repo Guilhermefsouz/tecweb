@@ -167,3 +167,49 @@
                 border: 1px solid #ccc;
                 box-sizing: border-box;
             }
+
+
+                        /* LISTAGEM */
+        #busca, #filtro {
+        margin-top: 10px;
+        padding: 10px;
+        width: 250px;
+        }
+
+        #lista {
+        margin-top: 20px;
+        width: 100%;
+        }
+
+        .produto {
+        background: white;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        text-align: left;
+        }
+
+        .produto button {
+        background: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        }
+
+        #contador, #total {
+    margin-top: 10px;
+    font-weight: bold;
+    }
+
+    .produto button {
+    margin-right: 5px;
+    }
+
+    .produto button:first-of-type {
+    background: #f39c12; /* editar */
+    }
+
+    .produto button:last-of-type {
+    background: red; /* excluir */
+    }
