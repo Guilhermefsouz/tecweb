@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="src/style.css">
+    </head>
+    <body>
+
+    <!-- IMAGEM TOPO -->
+    <img class="topo" src="img/corredor2.jpg" alt="corredor">
+
+    <!-- LISTAGEM -->
+    <section class="home-center">
+        <div class="home-box">
+
+        <h1>Produtos Cadastrados</h1>
+
+        <!-- BUSCA -->
+        <input type="text" id="busca" placeholder="Buscar produto...">
+
+        <!-- FILTRO -->
+        <select id="filtro">
+            <option value="">Todas categorias</option>
+            <option value="Alimentos">Alimentos</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Limpeza">Limpeza</option>
+        </select>
+
+        <p id="contador"></p>
+        <p id="total"></p>
+
+        <!-- LISTA -->
+        <div id="lista"></div>
+
+        <div class="home-buttons">
+            <a href="index.html" class="btn">Início</a>
+            <a href="cadastro.html" class="btn">Cadastro</a>
+        </div>
+
+        </div>
+    </section>
+
+    <script src="js/storage.js"></script>
+    <script src="js/listagem.js"></script>
+
+    </body>
+    </html>
