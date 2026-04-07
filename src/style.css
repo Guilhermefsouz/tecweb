@@ -1,60 +1,163 @@
-    body {
-    font-family: Arial;
-    margin: 0;
-    background: #f5f5f5;
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            }
+
+            /* IMAGEM TOPO */
+            .topo {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            }
+
+            /* HOME */
+            .home-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            }
+
+            .home-box {
+            text-align: center;
+            max-width: 500px;
+            }
+
+            /* BOTÕES */
+            .home-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            }
+
+            .btn {
+            background: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            }
+
+            /* TEXTO */
+            h1 {
+            color: #27ae60;
+            }
+
+            p {
+            font-size: 15px;
+            }
+
+            /* ================= CONTATO ================= */
+
+            .contato {
+            background: #fff;
+            padding: 20px;
+            }
+
+            .contato h2 {
+            margin-left: 20px;
+            }
+
+            /* LAYOUT */
+            .contato-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            }
+
+            /* FORM */
+            .form-area {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            gap: 8px;
+            }
+
+            .form-area input,
+            .form-area textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            }
+
+            .form-area textarea {
+            height: 100px;
+            }
+
+            .form-area button {
+            background: #2c003e;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            }
+
+            /* REDES */
+            .redes {
+            text-align: center;
+            max-width: 250px;
+            }
+
+            .icons {
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            }
+
+            .icons img {
+            width: 40px;
+            cursor: pointer;
+            }
+
+            /* ENDEREÇO */
+            .endereco-titulo {
+            margin-top: 20px;
+            }
+
+            .endereco {
+            font-size: 14px;
+            }
+
+            /* RESPONSIVO */
+            @media (max-width: 600px) {
+            .home-buttons {
+                flex-direction: column;
+            }
+
+            .contato-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            }
+
+            /* FORM CADASTRO */
+        select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        }
+
+        #erro {
+        color: red;
+        font-size: 14px;
+        }
+
+        /* campo preço com R$ */
+    .preco-container {
+    position: relative;
     }
 
-    .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background: #333;
-    color: white;
+    .preco-container span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
     }
 
-    .nav a {
-    color: white;
-    margin-left: 10px;
-    text-decoration: none;
-    }
-
-    .hero {
-    text-align: center;
-    padding: 50px;
-    }
-
-    .btn {
-    background: #007bff;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    }
-
-    .form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    }
-
-    .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 20px;
-    }
-
-    .card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    }
-
-    .verduras { 
-        width: 400px;
-    }
-
-    .corredor {
-        width: 400px;
+    .preco-container input {
+    padding-left: 35px;
     }

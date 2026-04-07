@@ -1,41 +1,56 @@
-    <html lang="pt-br">
-    <head>
-    <meta charset="UTF-8">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="src/style.css">
-    </head>
-    <body>
+        <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Produto</title>
+        <link rel="stylesheet" href="src/style.css">
+        </head>
+        <body>
 
-    <nav class="nav">
-    <h2>Supermercado BigBom</h2>
-    <div>
-        <a href="index.html">Início</a>
-        <a href="cadastro.html">Cadastro</a>
-        <a href="listagem.html">Produtos</a>
+        <!-- IMAGEM TOPO -->
+        <img class="topo" src="img/corredor2.jpg" alt="corredor">
+
+        <!-- CADASTRO -->
+        <section class="home-center">
+            <div class="home-box">
+
+            <h1>Cadastrar Produto</h1>
+
+            <form id="formProduto" class="form-area">
+
+                <input type="text" id="nome" placeholder="Nome do produto">
+                
+            <div class="preco-container">
+    <span>R$</span>
+    <input type="number" id="preco" min="0" step="0.01">
     </div>
-    </nav>
 
-    <form id="formProduto" class="form">
-    <h2>Cadastrar Produto</h2>
+                <select id="categoria">
+                <option value="">Categoria</option>
+                <option value="Alimentos">Alimentos</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Limpeza">Limpeza</option>
+                </select>
 
-    <input type="text" id="nome" placeholder="Nome do produto">
-    <input type="number" id="preco" placeholder="Preço">
+                <textarea id="descricao" placeholder="Descrição"></textarea>
 
-    <select id="categoria">
-        <option value="">Categoria</option>
-        <option value="Alimentos">Alimentos</option>
-        <option value="Bebidas">Bebidas</option>
-        <option value="Limpeza">Limpeza</option>
-    </select>
+                <button type="submit">Cadastrar</button>
 
-    <textarea id="descricao" placeholder="Descrição"></textarea>
+                <p id="erro"></p>
 
-    <button type="submit">Cadastrar</button>
-    <p id="erro"></p>
-    </form>
+            </form>
 
-    <script src="js/storage.js"></script>
-    <script src="js/cadastro.js"></script>
-    </body>
-    </html>
-        
+            <div class="home-buttons">
+                <a href="index.html" class="btn">Início</a>
+                <a href="listagem.html" class="btn">Listagem</a>
+            </div>
+
+            </div>
+        </section>
+
+        <script src="js/storage.js"></script>
+        <script src="js/cadastro.js"></script>
+
+        </body>
+        </html>
