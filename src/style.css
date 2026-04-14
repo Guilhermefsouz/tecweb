@@ -253,3 +253,47 @@ select {
     margin-top: 10px;
     font-weight: bold;
 }
+
+/* ANIMAÇÕES BOTÕES */
+
+/* Botões principais (Início, Cadastro, Listagem) */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Botão do formulário */
+.form-area button {
+    transition: all 0.3s ease;
+}
+
+.form-area button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.form-area button:active {
+    transform: scale(0.95);
+}
+
+/* Botões da listagem (editar/excluir) */
+.produto button {
+    transition: all 0.3s ease;
+}
+
+.produto button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.produto button:active {
+    transform: scale(0.9);
+}
