@@ -1,0 +1,25 @@
+.produto-card { background: #fff; border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 1.2rem; display: flex; flex-direction: column; gap: 0.6rem; box-shadow: var(--sombra-sm); transition: box-shadow var(--transicao), transform var(--transicao); border-left: 4px solid transparent; }
+.produto-card:hover { box-shadow: var(--sombra-md); transform: translateY(-2px); }
+.produto-card--verde  { border-left-color: var(--verde); }
+.produto-card--azul   { border-left-color: var(--azul); }
+.produto-card--roxo   { border-left-color: var(--roxo); }
+.produto-card--coral  { border-left-color: var(--coral); }
+.produto-card--amarelo{ border-left-color: var(--amarelo); }
+.produto-card--cinza  { border-left-color: #999; }
+
+.produto-card__header { display: flex; justify-content: space-between; align-items: flex-start; }
+.produto-tag { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
+.produto-tag--verde   { background: var(--verde-claro); color: var(--verde-hover); }
+.produto-tag--azul    { background: var(--azul-claro);  color: var(--azul); }
+.produto-tag--roxo    { background: var(--roxo-claro);  color: var(--roxo); }
+.produto-tag--coral   { background: var(--coral-claro); color: var(--coral); }
+.produto-tag--amarelo { background: var(--amarelo-claro); color: var(--amarelo); }
+.produto-tag--cinza   { background: var(--cinza-claro); color: var(--cinza); }
+
+.produto-card__remover { background: none; border: none; cursor: pointer; color: var(--texto-terciario); font-size: 0.85rem; padding: 2px 6px; border-radius: var(--raio-sm); transition: background var(--transicao), color var(--transicao); }
+.produto-card__remover:hover { background: var(--coral-claro); color: var(--coral); }
+.produto-card__nome { font-size: 1rem; font-weight: 700; color: var(--texto); line-height: 1.3; }
+.produto-card__descricao { font-size: 0.84rem; color: var(--texto-secundario); line-height: 1.5; flex: 1; }
+.produto-card__footer { display: flex; justify-content: space-between; align-items: center; padding-top: 0.5rem; border-top: 1px solid var(--borda); margin-top: auto; }
+.produto-card__preco { font-size: 1.05rem; font-weight: 800; color: var(--verde); }
+.produto-card__data { font-size: 0.75rem; color: var(--texto-terciario); }

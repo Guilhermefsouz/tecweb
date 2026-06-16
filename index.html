@@ -1,73 +1,13 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SuperMercado BigBom</title>
-    <link rel="stylesheet" href="src/style.css">
-    </head>
-    <body>
-
-    <!-- IMAGEM TOPO -->
-    <img class="topo" src="img/corredor2.jpg" alt="corredor">
-    <button id="theme-btn" class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
-    <!-- HOME -->
-    <section class="home-center">
-        <div class="home-box">
-        <h1>SuperMercado BigBom</h1>
-
-        <p>
-            Bem-vindo ao nosso sistema de gerenciamento de supermercado.
-            Aqui você pode cadastrar produtos, visualizar a listagem e
-            organizar seu estoque de forma simples e eficiente.
-        </p>
-
-        <div class="home-buttons">
-            <a href="index.html" class="btn">Início</a>
-            <a href="cadastro.html" class="btn">Cadastro</a>
-            <a href="listagem.html" class="btn">Listagem</a>
-        </div>
-        </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section class="contato">
-        <h2>Contato</h2>
-
-        <div class="contato-container">
-
-        <!-- FORM -->
-        <div class="form-area">
-            <h3>Fale conosco</h3>
-
-            <input type="text" placeholder="Seu nome">
-            <input type="email" placeholder="Seu email">
-            <input type="text" placeholder="Seu telefone (opcional)">
-            <textarea placeholder="Sua mensagem"></textarea>
-
-            <button>Enviar</button>
-        </div>
-
-        <!-- REDES + ENDEREÇO -->
-        <div class="redes">
-            <h3>Nos acompanhe</h3>
-
-            <div class="icons">
-            <img src="img/instagram.png" alt="Instagram">
-            <img src="img/facebook.png" alt="Facebook">
-            <img src="img/youtube.png" alt="YouTube">
-            </div>
-
-            <h3 class="endereco-titulo">Endereço</h3>
-            <p class="endereco">
-            Rua das Flores, 123<br>
-            Bem ali<br>
-            Do lado de ali - DF
-            </p>
-        </div>
-
-        </div>
-    </section>
-    <script src="js/ui.js"></script>
-    </body>
-    </html>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
