@@ -1,0 +1,10 @@
+.navbar { background: #fff; border-bottom: 1px solid var(--borda); padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; box-shadow: var(--sombra-sm); }
+.navbar-brand { display: flex; align-items: center; gap: 8px; }
+.navbar-logo { font-size: 1.4rem; }
+.navbar-nome { font-size: 1.1rem; font-weight: 700; color: var(--verde); letter-spacing: -0.3px; }
+.navbar-links { display: flex; gap: 4px; align-items: center; }
+.nav-link { position: relative; padding: 8px 16px; border-radius: var(--raio-sm); font-size: 0.9rem; font-weight: 500; color: var(--texto-secundario); transition: background var(--transicao), color var(--transicao); }
+.nav-link:hover { background: var(--cinza-claro); color: var(--texto); }
+.nav-link.active { background: var(--verde-claro); color: var(--verde); font-weight: 600; }
+.nav-badge { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; background: var(--verde); color: #fff; border-radius: 50%; font-size: 0.68rem; font-weight: 700; margin-left: 4px; vertical-align: middle; }
+@media (max-width: 480px) { .navbar { padding: 0 1rem; } .navbar-nome { display: none; } .nav-link { padding: 8px 10px; font-size: 0.82rem; } }

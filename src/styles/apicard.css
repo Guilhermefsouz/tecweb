@@ -1,0 +1,7 @@
+.api-card { display: flex; align-items: center; gap: 10px; background: var(--fundo); border: 1px solid var(--borda); border-radius: var(--raio-sm); padding: 8px 10px; transition: background var(--transicao); }
+.api-card:hover { background: var(--verde-claro); }
+.api-card__img { width: 42px; height: 42px; object-fit: contain; border-radius: 4px; flex-shrink: 0; background: #fff; border: 1px solid var(--borda); }
+.api-card__img-placeholder { width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; background: #fff; border: 1px solid var(--borda); border-radius: 4px; flex-shrink: 0; }
+.api-card__info { overflow: hidden; }
+.api-card__nome { font-size: 0.8rem; font-weight: 600; color: var(--texto); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.api-card__marca { font-size: 0.74rem; color: var(--texto-terciario); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

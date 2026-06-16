@@ -1,0 +1,28 @@
+.inicio__hero { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 3rem 0 2.5rem; }
+.inicio__eyebrow { font-size: 0.8rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--verde); margin-bottom: 0.75rem; }
+.inicio__titulo { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; color: var(--texto); margin-bottom: 1rem; letter-spacing: -1px; }
+.inicio__titulo em { font-style: normal; color: var(--verde); }
+.inicio__subtitulo { font-size: 1.05rem; color: var(--texto-secundario); max-width: 460px; line-height: 1.7; margin-bottom: 2rem; }
+.inicio__acoes { display: flex; gap: 12px; flex-wrap: wrap; }
+.inicio__hero-visual { flex-shrink: 0; }
+.inicio__emoji-bg { font-size: 7rem; display: block; animation: flutuar 3s ease-in-out infinite; }
+@keyframes flutuar { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+.inicio__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
+.stat-card { background: #fff; border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 1.4rem 1.2rem; text-align: center; box-shadow: var(--sombra-sm); transition: box-shadow var(--transicao), transform var(--transicao); }
+.stat-card:hover { box-shadow: var(--sombra-md); transform: translateY(-2px); }
+.stat-card__numero { display: block; font-size: 1.8rem; font-weight: 800; color: var(--verde); margin-bottom: 4px; }
+.stat-card__label { font-size: 0.82rem; color: var(--texto-terciario); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.inicio__features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.feature-card { background: #fff; border: 1px solid var(--borda); border-radius: var(--raio-md); padding: 1.5rem; box-shadow: var(--sombra-sm); }
+.feature-card__icone { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
+.feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--texto); }
+.feature-card p { font-size: 0.88rem; color: var(--texto-secundario); line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .inicio__hero { flex-direction: column-reverse; text-align: center; padding: 2rem 0 1.5rem; }
+  .inicio__subtitulo { max-width: 100%; } .inicio__acoes { justify-content: center; } .inicio__emoji-bg { font-size: 4rem; }
+  .inicio__stats, .inicio__features { grid-template-columns: 1fr; }
+}
+@media (min-width: 769px) and (max-width: 1024px) { .inicio__stats, .inicio__features { grid-template-columns: repeat(2, 1fr); } }
