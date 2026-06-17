@@ -24,7 +24,7 @@ export default function Inicio() {
           </div>
         </div>
         <div className="inicio__hero-visual">
-          <span className="inicio__emoji-bg">🛒</span>
+          <img src="/corredor.jpg" alt="Corredor do supermercado" className="inicio__hero-img" />
         </div>
       </section>
 
@@ -42,24 +42,6 @@ export default function Inicio() {
             R$ {total.toFixed(2).replace('.', ',')}
           </span>
           <span className="stat-card__label">Valor total em estoque</span>
-        </div>
-      </section>
-
-      <section className="inicio__features">
-        <div className="feature-card">
-          <span className="feature-card__icone">📝</span>
-          <h3>Cadastro rápido</h3>
-          <p>Adicione produtos com nome, preço, categoria e descrição com validação em tempo real.</p>
-        </div>
-        <div className="feature-card">
-          <span className="feature-card__icone">🔍</span>
-          <h3>Busca e filtros</h3>
-          <p>Encontre qualquer produto pela listagem com busca por nome e filtro por categoria.</p>
-        </div>
-        <div className="feature-card">
-          <span className="feature-card__icone">🌐</span>
-          <h3>Dados da API</h3>
-          <p>Veja sugestões de produtos reais consumidos da Open Food Facts API por categoria.</p>
         </div>
       </section>
     </div>

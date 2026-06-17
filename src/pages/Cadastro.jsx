@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useProdutos } from '../context/ProdutoContext';
-import { useProdutosAPI } from '../hooks/useProdutosAPI';
-import APICard from '../components/APICard';
 import '../styles/cadastro.css';
 
 const CATEGORIAS = ['Alimentos', 'Bebidas', 'Limpeza', 'Higiene', 'Frios'];
@@ -29,7 +27,6 @@ export default function Cadastro() {
 
   const { adicionarProduto } = useProdutos();
   const navigate = useNavigate();
-  const { dados: sugestoes, carregando: carregandoAPI, erro: erroAPI } = useProdutosAPI(campos.categoria);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -134,30 +131,6 @@ export default function Cadastro() {
           </form>
         </div>
 
-        <div className="cadastro__api-area">
-          <div className="api-sugestoes">
-            <h2 className="api-sugestoes__titulo">
-              {campos.categoria ? `Produtos similares — ${campos.categoria}` : 'Selecione uma categoria'}
-            </h2>
-            <p className="api-sugestoes__subtitulo">
-              {campos.categoria ? 'Dados da Open Food Facts API' : 'Sugestões aparecerão aqui ao escolher uma categoria.'}
-            </p>
-            {carregandoAPI && (
-              <div className="api-sugestoes__loading">
-                <span className="spinner" aria-hidden="true" /> Buscando sugestões…
-              </div>
-            )}
-            {erroAPI && !carregandoAPI && <p className="api-sugestoes__erro">{erroAPI}</p>}
-            {!carregandoAPI && !erroAPI && sugestoes.length > 0 && (
-              <div className="api-sugestoes__grid">
-                {sugestoes.map((p, i) => <APICard key={i} produto={p} />)}
-              </div>
-            )}
-            {!carregandoAPI && !erroAPI && campos.categoria && sugestoes.length === 0 && (
-              <p className="api-sugestoes__vazio">Nenhuma sugestão encontrada.</p>
-            )}
-          </div>
-        </div>
       </div>
     </div>
   );
